@@ -1,0 +1,77 @@
+header{
+    background-color: #013A20;
+   }
+   
+      .jumbotronback{
+       background-image: url("../Images/background.jpg");
+       background-size: cover;
+       height: 100%;}
+   
+       #Jumbobutton{
+           background-color: #478C5C;
+           margin-top: 60px;
+           color: aliceblue;
+           font-size: 20px;
+       }
+       #Jumbobutton:hover{
+         background-color: #6b675f;
+       }
+       #image_jumbo{
+           width: 70%;
+           margin-left: 80px;
+       }
+      
+      .jumbo-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35pt;
+        color: #895B1E;
+       }  
+   body {
+       background-color: #CDD193;
+     }
+    .card{
+        margin-left: 20px;
+        width: 90%; 
+        background-image: url("../Images/background2.jpg") ; 
+        margin-bottom: 10px;
+        background-color: #478C5C;
+      }
+    .card-image{
+      height: 250px
+    }
+
+    p {
+        color: #F4EBD0;
+      }
+    .scrolling-wrapper{
+        overflow-x: auto;
+      }
+    .scrollable-menu {
+        height: auto;
+        max-height: 150px;
+        overflow-x: hidden;
+    }
+    
+      .button-font{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10pt;
+      }
+      .navi{
+        font-size: 12pt;
+      }
+      .heading{
+        font-family: 'Montserrat', sans-serif;
+      }
+      .btn{
+        background: #1A5653;
+        color: aliceblue;
+      }
+      .history{
+        color: black;
+      }
+      .history:hover{
+        color: blue;
+      }
+      .renegerate-btn:hover{
+        color: red;
+      }

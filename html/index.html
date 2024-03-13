@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="300">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="StyleSheet/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>  
+
+
+    <title>Homepage</title>
+
+  </head>
+  <body>
+
+    <header>
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid ">
+            <a href="index.html"><img class="nav_logo" src="Images/logo.png" width="100" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link button-font navi active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link button-font navi" href="input.html">Generate</a>
+                </li>
+                <a class="nav-link button-font navi " href="saved.html">Saved</a>
+              </ul>
+              <form class="d-flex">
+                  <div class="dropdown col-2" style="height: 60%;  width:80%; margin-right: 60px;">
+                      <button class="btn  dropdown-toggle button-font btn-important" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profile
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active button-font" href="Inprogress.html">Register/Sign In</a></li>
+                        <li><a class="dropdown-item button-font" href="Inprogress.html">Setting</a></li>
+                        <li><a class="dropdown-item button-font" href="Inprogress.html">Edit</a></li>
+                        <li><hr class="dropdown-divider button-font"></li>
+                        <li><a class="dropdown-item button-font" href="Inprogress.html">Log out</a></li>
+                      </ul>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </nav><!--Nav bar end-->
+
+      <!--Jumbotron section-->
+     <div class="mb-4 rounded-3">
+      <div class="jumbotronback container-fluid py-5">
+      <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <h1 class="display-5 fw-bold jumbo-title">Geology 3D modelling </h1> 
+        <div class="col-lg-10 col-md-10 fs-2">         
+        <p class="content">A revolution application to visualise geological modelling</p>
+        </div>
+        <a class="btn btn-md button-font" id="Jumbobutton" type="button" href="#feature">Explore More</a>
+      </div>
+      <div class="col-lg-6 col-md-8 p-5" >
+        <div id="carouselExampleSlidesOnly image_jumbo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/poster1.jpg" class="d-block w-100" alt="Poster1" height="330" width="250">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/poster2.jpg" class="d-block w-100" alt="Rome" height="330" width="250">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/poster3.png" class="d-block w-100" alt="Brisbane" height="330" width="250">
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </header>
+  <main>
+    <div class="row">
+        <h2 style="margin-left: 10px;">
+            Feature
+        </h2>
+        <hr class="dropdown-divider">
+
+          <!-- feature-->
+
+          <div class="row feature scrolling-wrapper flex-row flex-nowrap mt-4 pb-4 pt-2">
+
+          <div class="col-lg-3 col-sm-12 col-md-6">
+              <div class="card" >
+                  <img class="card-img-top card-image" src="Images/poster2.jpg"  alt="poster1" >
+                  
+                  <div class="card-body">
+                    <div class="row">
+                    <div class="col-md-8">
+                    <h5 class="card-title heading">Generate</h5>
+                    <hr class="dropdown-divider">
+                  </div>
+                    </div>
+                    <p class="button-font"> Click to genereate 3D model </p>
+                    <a href="input.html" class="btn button-font">Proceed</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-12 col-md-6">
+              <div class="card" >
+                  <img src="Images/poster4.png" class="card-img-top card-image" alt="Saved" >
+                  
+                  <div class="card-body">
+                    <div class="row">
+                    <div class="col-md-8">
+                    <h5 class="card-title heading">Saved Model</h5>
+                    <hr class="dropdown-divider">
+                  </div>
+                  <div class="col-md-4">
+                  </div>
+                    </div>
+                    <p class="button-font"> To view the saved model </p>
+                    <a href="saved.html" class="btn  button-font">View</a>
+                  </div>
+              </div>
+            </div>
+            
+
+    </div>
+    </div>
+  </main>
+
+  </body>
+
+  </html>

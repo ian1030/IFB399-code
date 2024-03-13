@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="300">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="StyleSheet/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>  
+
+
+    <title>Collect Input</title>
+
+  </head>
+  <body>
+
+    <header>
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid ">
+            <a href="index.html"><img class="nav_logo" src="Images/logo.png" width="100" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link button-font navi " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link button-font navi active" href="input.html">Generate</a>
+                </li>
+                <a class="nav-link button-font navi " href="saved.html">Saved</a>
+              </ul>
+              <form class="d-flex">
+                  <div class="dropdown col-2" style="height: 60%;  width:80%; margin-right: 60px;">
+                      <button class="btn  dropdown-toggle button-font btn-important" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profile
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item active button-font" href="Inprogress.html">Register/Sign In</a></li>
+                        <li><a class="dropdown-item button-font" href="Inprogress.html">Setting</a></li>
+                        <li><a class="dropdown-item button-font" href="Inprogress.html">Edit</a></li>
+                        <li><hr class="dropdown-divider button-font"></li>
+                        <li><a class="dropdown-item button-font" href="Inprogress.html">Log out</a></li>
+                      </ul>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </nav><!--Nav bar end-->
+    </header>
+    <div>
+        <h1 class="heading" id="create-post-title" style="margin-left: 3%;">Insert your data! </h1>
+        <hr class="dropdown-divider">
+    </div>
+
+    <div class="row">
+    <div class="col-4" >
+      <h1 class="button-font" style="margin-left: 10%; margin-top: 10%; font-size: larger;"><u>Submitted file </u></h1>
+      <h2 class="button-font" style="margin-left: 10%; margin-top: 10%;">Block 1</h2>
+      <ul class="button-font" style="margin-left: 10%;">
+        <li style="color: green;"> Top surface : 150kb (success)</li>
+        <li style="color: green;"> E-W : 150kb (success)</li>
+        <li style="color: red;"> N-S surface: 30kb (fail)</li>
+        <li style="color: green;"> Gravity Field : 950kb (success)</li>
+        <li style="color: green;"> Magnetic Field: 150kb (success)</li>
+      </ul>
+      <h2 class="button-font" style="margin-left: 10%; margin-top: 10%;">Block 2</h2>
+      <ul class="button-font" style="margin-left: 10%;">
+        <li style="color: green;"> Top surface : 250kb (success)</li>
+        <li style="color: green;"> E-W : 180kb (success)</li>
+        <li style="color: green;"> N-S surface: 230kb (success)</li>
+        <li style="color: green;"> Gravity Field : 250kb (success)</li>
+        <li style="color: green;"> Magnetic Field: 180kb (success)</li>
+      </ul>
+      <h2 class="button-font" style="margin-left: 10%; margin-top: 10%;">Block 3</h2>
+      <ul class="button-font" style="margin-left: 10%;">
+        <li style="color: red;"> Top surface : 50kb (fail)</li>
+        <li style="color: green;"> E-W : 150kb (success)</li>
+        <li style="color: green;"> N-S surface: 170kb (success)</li>
+        <li style="color: green;"> Gravity Field : 250kb (success)</li>
+        <li style="color: green;"> Magnetic Field: 150kb (success)</li>
+      </ul>
+
+    </div>
+    <div class="col-8 inputfield">
+        <div style="background-image: url(Images/input.png); width: 450pt; height: 350pt; margin-top: 50px;" href="#myFile">
+          <label for="myFile" class="form-label label-title" id="add-image" >Insert An Image</label>
+                <input type="file" id="myFile" name="filename" class="button-font" style = "position:absolute;">
+        </div>
+    </div>
+    
+    
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="mycentered-text text-center">
+            <button type="submit" class="btn btn-default button-font" id="submit-button">Submit</button>
+            <a class=" button-font" href="generate.html"> Generate </a>
+          </div>
+        </div>
+     </div>
+
+
+
+
+
+  </body>
+  </html>
